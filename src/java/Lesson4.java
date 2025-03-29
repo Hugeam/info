@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class Lesson4 {
 
     public static void main(String[] args) {
         int[] binaryArray = new int[]{0, 1, 0, 1, 0, 1, 0};
@@ -31,7 +31,7 @@ public class Main {
     }
 
     public static void invertArray(int[] array) {
-        for(int i = 0; i < array.length; ++i) {
+        for (int i = 0; i < array.length; ++i) {
             if (array[i] == 0) {
                 array[i] = 1;
             } else if (array[i] == 1) {
@@ -45,7 +45,7 @@ public class Main {
     public static void emptyIntegerArray(int[] ignoredArray) {
         int[] newArray = new int[100];
 
-        for(int i = 0; i < newArray.length; ++i) {
+        for (int i = 0; i < newArray.length; ++i) {
             newArray[i] = i + 1;
         }
 
@@ -53,7 +53,7 @@ public class Main {
     }
 
     public static void initializedArray(int[] array) {
-        for(int i = 0; i < array.length; ++i) {
+        for (int i = 0; i < array.length; ++i) {
             if (array[i] < 6) {
                 array[i] *= 2;
             }
@@ -62,14 +62,14 @@ public class Main {
     }
 
     public static void fillMainDiagonal(int[][] array) {
-        for(int i = 0; i < array.length; ++i) {
+        for (int i = 0; i < array.length; ++i) {
             array[i][i] = 1;
         }
 
     }
 
     public static void fillDiagonals(int[][] array) {
-        for(int i = 0; i < array.length; ++i) {
+        for (int i = 0; i < array.length; ++i) {
             array[i][i] = 1;
             array[i][array.length - 1 - i] = 1;
         }
@@ -77,7 +77,7 @@ public class Main {
     }
 
     public static void printArray(int[][] array) {
-        for(int[] row : array) {
+        for (int[] row : array) {
             System.out.println(Arrays.toString(row));
         }
 
@@ -87,7 +87,7 @@ public class Main {
     public static int[] initializeArrayA(int len, int initialValue) {
         int[] array = new int[len];
 
-        for(int i = 5; i < array.length; ++i) {
+        for (int i = 5; i < array.length; ++i) {
             array[i] = initialValue;
         }
 
@@ -101,7 +101,7 @@ public class Main {
             int min = array[0];
             int max = array[0];
 
-            for(int i = array.length - 1; i >= 0; --i) {
+            for (int i = array.length - 1; i >= 0; --i) {
                 if (array[i] < min) {
                     min = array[i];
                 }
@@ -119,13 +119,13 @@ public class Main {
     public static boolean findBalance(int[] array1) {
         int totalSum = 0;
 
-        for(int num : array1) {
+        for (int num : array1) {
             totalSum += num;
         }
 
         int leftSum = 0;
 
-        for(int j : array1) {
+        for (int j : array1) {
             int rightSum = totalSum - leftSum - j;
             if (leftSum == rightSum) {
                 return true;
