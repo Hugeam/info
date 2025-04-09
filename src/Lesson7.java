@@ -1,4 +1,4 @@
-public class Lesson8 {
+public class Lesson7 {
     public static void main(String[] args) {
 
         Employee employee = new Employee("Daniil", "Manager", "daniil@example.com", "+7 3 3 3 3 3 3", 20);
