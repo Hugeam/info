@@ -2,6 +2,7 @@ package Lesson9;
 
 import java.util.Random;
 
+
 public class Older40 {
     public static void main(String[] args) {
         Random random = new Random();
